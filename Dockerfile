@@ -2,7 +2,7 @@ FROM itconinc/linux:develop
 
 COPY httpd.conf /etc/httpd/conf/httpd.conf
 
-COPY run_httpd.sh /run_httpd.sh
+COPY run-httpd.sh /run-httpd.sh
 RUN chmod -v +x /run-httpd.sh
 
-CMD ["/run_httpd.sh"]
+CMD ["/run-httpd.sh"]
